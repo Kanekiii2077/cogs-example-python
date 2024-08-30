@@ -3,8 +3,16 @@ In this repository, I will show an example of cogs in python
 
 Create a file “main.py” (or other name), then create a folder “Cogs” in which will be our commands and events.
 
-In the “main.py” file  import only OS and disnake(or discord.py). give prefix, write intents, remove help command if necessary. Next, we do a subload of the cogs
+In the “main.py” file  import only OS and disnake(or discord.py). give prefix, write intents, remove help command if necessary.
 
+```
+import disnake
+from disnake.ext import commands
+
+bot = commands.Bot(command_prefix = "!', help_command = None, intents = disnake.Intents.all())
+```
+
+Next, we do a subload of the cogs
 ```
 @bot.command()
 async def load(ctx, extension):
