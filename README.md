@@ -6,6 +6,7 @@ Create a file “main.py” (or other name), then create a folder “Cogs” in 
 In the “main.py” file  import only OS and disnake(or discord.py). give prefix, write intents, remove help command if necessary.
 
 ```
+import os
 import disnake
 from disnake.ext import commands
 
